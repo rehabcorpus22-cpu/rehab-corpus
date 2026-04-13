@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rehab Corpus | Clínica Deportiva Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#ffffff;color:#0b1f3a}
+header{background:rgba(11,31,58,0.9);backdrop-filter:blur(10px);color:white;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:fixed;width:100%;top:0;z-index:1000}
+header h2{font-weight:700}
+header a{color:white;text-decoration:none;margin-left:15px}.hero{height:100vh;background:url('equipo1.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;position:relative;color:white;text-align:center} .hero::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(11,31,58,0.65)} .hero-content{position:relative;z-index:2;max-width:700px;animation:fadeIn 1.5s ease} .hero h1{font-size:3em;margin-bottom:15px} .hero p{font-size:1.2em}
+
+.btn{display:inline-block;margin-top:25px;padding:15px 30px;border-radius:30px;text-decoration:none;font-weight:600;transition:0.3s} .btn-primary{background:#00a86b;color:white} .btn:hover{transform:scale(1.05)}
+
+.section{padding:100px 20px;text-align:center} .section h2{margin-bottom:20px;font-size:2em} .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin-top:40px}
+
+.card{background:white;padding:25px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.1);transition:0.4s;opacity:0;transform:translateY(40px)} .card.show{opacity:1;transform:translateY(0)} .card:hover{transform:translateY(-10px) scale(1.02)}
+
+.testimonials{background:#f4f9f7} .footer{background:#0b1f3a;color:white;text-align:center;padding:20px}
+
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:18px;border-radius:50%;text-decoration:none;font-size:22px;box-shadow:0 5px 15px rgba(0,0,0,0.3);animation:pulse 2s infinite}
+
+@keyframes fadeIn{from{opacity:0}to{opacity:1}} @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}} </style>
+
+</head>
+<body><header>
+<h2>Rehab Corpus</h2>
+<div>
+<a href="#servicios">Servicios</a>
+<a href="#equipo">Equipo</a>
+<a href="#contacto">Contacto</a>
+</div>
+</header><section class="hero">
+<div class="hero-content">
+<h1>Recupera tu cuerpo con atención de alto nivel</h1>
+<p>Especialistas en rehabilitación deportiva y ortopedia con enfoque premium</p>
+<a href="https://wa.me/5210000000000" class="btn btn-primary">Agendar por WhatsApp</a>
+</div>
+</section><section class="section" id="servicios">
+<h2>Servicios Especializados</h2>
+<div class="grid">
+<div class="card"><h3>Rehabilitación Ortopédica</h3><p>Tratamientos avanzados para lesiones</p></div>
+<div class="card"><h3>Terapia Deportiva</h3><p>Recuperación de alto rendimiento</p></div>
+<div class="card"><h3>Electroterapia</h3><p>Tecnología de última generación</p></div>
+</div>
+</section><section class="section" id="equipo">
+<h2>Equipo Profesional</h2>
+<div class="grid">
+<div class="card"><img src="equipo1.jpg" style="width:100%;border-radius:15px"></div>
+<div class="card"><img src="equipo2.jpg" style="width:100%;border-radius:15px"></div>
+</div>
+</section><section class="section testimonials">
+<h2>Resultados Reales</h2>
+<div class="grid">
+<div class="card">"Recuperé mi movilidad en semanas"</div>
+<div class="card">"Atención profesional de alto nivel"</div>
+<div class="card">"Resultados visibles desde la primera sesión"</div>
+</div>
+</section><section class="section" id="contacto">
+<h2>Agenda tu cita</h2>
+<p>Contáctanos directamente</p>
+<a href="https://wa.me/5210000000000" class="btn btn-primary">Enviar mensaje</a>
+</section><a href="https://wa.me/5210000000000" class="whatsapp">💬</a>
+
+<div class="footer">
+<p>© 2026 Rehab Corpus</p>
+</div><script>
+const cards=document.querySelectorAll('.card');
+window.addEventListener('scroll',()=>{
+const trigger=window.innerHeight*0.85;
+cards.forEach(card=>{
+const top=card.getBoundingClientRect().top;
+if(top<trigger){card.classList.add('show');}
+});
+});
+</script></body>
+</html>
