@@ -12,7 +12,7 @@ header{background:rgba(11,31,58,0.9);color:white;padding:15px 20px;display:flex;
 header img{height:50px}
 header h2{font-weight:700}
 header a{color:white;text-decoration:none;margin-left:15px}
-.hero{height:100vh;background:url('WhatsApp%20Image%202026-04-13%20at%2010.25.01%20AM.jpeg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;position:relative;color:white;text-align:center}
+.hero{height:100vh;background:url('hero.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;position:relative;color:white;text-align:center}
 .hero::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(11,31,58,0.65)}
 .hero-content{position:relative;z-index:2;max-width:700px}
 .hero h1{font-size:3em;margin-bottom:15px}
@@ -20,35 +20,52 @@ header a{color:white;text-decoration:none;margin-left:15px}
 .section h2{margin-bottom:20px;font-size:2em}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin-top:40px}
 .card{background:white;padding:25px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.1);transition:0.4s}
-.card img{width:100%;border-radius:15px}
+.card img{width:100%;border-radius:15px;height:auto}
 .footer{background:#0b1f3a;color:white;text-align:center;padding:20px}
+.btn{display:inline-block;margin-top:25px;padding:15px 30px;border-radius:30px;text-decoration:none;font-weight:600;background:#00a86b;color:white;transition:0.3s}
+.btn:hover{transform:scale(1.05)}
 </style>
 </head>
 <body>
 <header>
-<img src="WhatsApp%20Image%202026-04-13%20at%2011.03.13%20A.png" alt="Logo">
+<img src="logo.png" alt="Logo">
 <h2>Rehab Corpus</h2>
 <div>
 <a href="#servicios">Servicios</a>
 <a href="#equipo">Equipo</a>
+<a href="#contacto">Contacto</a>
 </div>
 </header>
 <section class="hero">
 <div class="hero-content">
 <h1>Recupera tu cuerpo con atención de alto nivel</h1>
-<p>Especialistas en rehabilitación deportiva y ortopedia</p>
+<p>Especialistas en rehabilitación deportiva y ortopedia con enfoque premium</p>
+<a href="https://wa.me/5210000000000" class="btn">Agendar por WhatsApp</a>
+</div>
+</section>
+<section class="section" id="servicios">
+<h2>Servicios Especializados</h2>
+<div class="grid">
+<div class="card"><h3>Rehabilitación Ortopédica</h3><p>Tratamientos avanzados para lesiones</p></div>
+<div class="card"><h3>Terapia Deportiva</h3><p>Recuperación de alto rendimiento</p></div>
+<div class="card"><h3>Electroterapia</h3><p>Tecnología de última generación</p></div>
 </div>
 </section>
 <section class="section" id="equipo">
 <h2>Equipo Profesional</h2>
 <div class="grid">
-<div class="card"><img src="WhatsApp%20Image%202026-04-13%20at%2010.33.13%20AM.jpeg" alt="Equipo 1"></div>
-<div class="card"><img src="WhatsApp%20Image%202026-04-13%20at%2010.23.59%20AM.jpeg" alt="Equipo 2"></div>
-<div class="card"><img src="WhatsApp%20Image%202026-04-13%20at%2010.35.28%20AM.jpeg" alt="Equipo 3"></div>
+<div class="card"><img src="equipo1.jpg" alt="Equipo 1"></div>
+<div class="card"><img src="equipo2.jpg" alt="Equipo 2"></div>
+<div class="card"><img src="equipo3.jpg" alt="Equipo 3"></div>
 </div>
 </section>
+<section class="section" id="contacto">
+<h2>Agenda tu cita</h2>
+<p>Contáctanos directamente</p>
+<a href="https://wa.me/5210000000000" class="btn">Enviar mensaje</a>
+</section>
 <div class="footer">
-<p>© 2026 Rehab Corpus</p>
+<p>© 2026 Rehab Corpus - Todos los derechos reservados</p>
 </div>
 </body>
 </html>
